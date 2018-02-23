@@ -12,8 +12,7 @@ Run this in your terminal:
 $ xcode-select --install
 ```
 
-In order to use this dotfiles, just clone this repository in your home
-directory:
+Just clone this repository in your home directory:
 
 ```
 $ git clone https://github.com/victorhmp/dotfiles
@@ -22,7 +21,7 @@ $ git clone https://github.com/victorhmp/dotfiles
 Then, run:
 
 ```
-$ sh install.sh
+~/dotfiles$ sh install.sh
 ```
 to create symlinks in the home directory and move any existing dotfiles in
 homedir to 'dotfiles_old' directory and install Homebrew and Vundle for Vim.
@@ -30,14 +29,14 @@ homedir to 'dotfiles_old' directory and install Homebrew and Vundle for Vim.
 Run:
 
 ```
-$ sh zsh-install
+~/dotfiles$ sh zsh-install
 ```
 to install and set Zsh as default shell.
 
 Run: 
 
 ```
-$ sh ohmyzsh.sh
+~/dotfles$ sh ohmyzsh.sh
 ```
 to install oh-my-zsh and PowerLevel9K theme.
 
@@ -45,7 +44,7 @@ to install oh-my-zsh and PowerLevel9K theme.
 Run: 
 
 ```
-$ sh ./.macos
+~/dotfiles$ sh ./.macos
 ```
 to setup some macOS defaults on a new Mac.
 
