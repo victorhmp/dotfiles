@@ -5,7 +5,6 @@
 # directory to any desired dotfiles in ~/dotfiles #
 ###################################################
 
-
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
 files="gitconfig gitignore_global vimrc vim zshrc"    # list of files/folders to symlink in homedir
