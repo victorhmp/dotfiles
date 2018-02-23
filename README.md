@@ -34,6 +34,14 @@ sh ohmyzsh.sh
 ```
 to install oh-my-zsh and PowerLevel9K theme.
 
+## macOS defaults  ##
+Run: 
+
+```
+./.macos
+```
+to setup some macOS defaults on a new Mac.
+
 ## iTerm2  ##
 The iTerm2-config folder contains all setup files that I use on my terminal.
 That are no install scripts for this setup.
