@@ -18,7 +18,7 @@ or simply a `make` command will prompt you to install it too.
 
 ## Setting Up Environment  ##
 
-Just clone this repository in your home directory:
+First, clone this repository in your home directory:
 
 ```
 $ git clone https://github.com/victorhmp/dotfiles
@@ -72,8 +72,7 @@ The iTerm2-config folder contains all setup files that I use on my terminal.
 To setup iTerm2, first you should choose the right colorscheme: `iTerm2 ->
 Preferences -> Profiles -> Colors -> Color Presets -> Import` and go to the
 iTerm2-config file and select `gruvbox-dark.itermcolors`, then open `Color
-Presects` selector again and select gruvbox-dark. Now your iTerm2 should look
-awesome!
+Presects` selector again and select gruvbox-dark. Much better!
 
 Let's also install an amazing font! First, lets install the font into your
 sistem: 
