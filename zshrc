@@ -3,7 +3,7 @@
 
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/victor2142/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Path to conda
 PATH=${PATH}:~/anaconda3/bin
