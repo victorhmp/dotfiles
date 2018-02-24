@@ -94,11 +94,16 @@ that, obviously... Just run (from inside the iTerm2-config folder):
 OK! Now your iTerm2 should look awesome! =D
 
 ## macOS defaults  ##
-Run:
+This repository includes a `.macos` file with some convenient configuration for
+your system, specially usefull for setting up a new Mac. If you just want my
+configuration (you should really take a look at the .macos file and see what it
+does), you can just run:
 
 ```
 ~/dotfiles$ sh ./.macos
 ```
-to setup some macOS defaults on a new Mac.
+After running the script, you should restart your Mac and evrything should be
+configured.
 
+Note: If you want to make your own `.macos` file, check out [Mathias Byrens' macOS defaults script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos), probably the best reference you can find for setting macOS defaults via script.
 
