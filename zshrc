@@ -134,6 +134,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/opt/bison/bin:$PATH"
 
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
