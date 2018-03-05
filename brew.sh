@@ -24,6 +24,7 @@ brew upgrade --all
 
 # Install the Homebrew packages I use on a day-to-day basis.
 apps=(
+    node
     cask
     rvm
     nvm
