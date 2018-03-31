@@ -15,11 +15,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'morhetz/gruvbox'
 Plugin 'posva/vim-vue'
 
-Plugin 'zchee/deoplete-jedi', { 'for': 'python' }
-Plugin 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
-Plugin 'zchee/deoplete-clang', { 'for': ['c', 'cpp'] }
-Plugin 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
-
 call vundle#end()
 filetype plugin indent on
 
