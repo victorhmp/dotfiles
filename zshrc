@@ -1,13 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export CLASSPATH=$CLASSPATH:~/algs4/algs4.jar
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-
-# Path to conda
-PATH=${PATH}:~/anaconda3/bin
-export PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -142,4 +137,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
 
-
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
