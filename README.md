@@ -75,7 +75,7 @@ iTerm2-config file and select `gruvbox-dark.itermcolors`, then open `Color
 Presects` selector again and select gruvbox-dark. Much better!
 
 Let's also install an amazing font! First, lets install the font into your
-sistem: 
+system: 
 
 ```
 ~/dotfiles/iTerm2-config$ open SourceCodePro/Source\ Code\ Pro\ Nerd\ Font\ Complete.ttf

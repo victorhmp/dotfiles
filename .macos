@@ -25,8 +25,8 @@ echo "Set standby delay to 24 hours"
 sudo pmset -a standbydelay 86400
 
 # Disable the sound effects on boot
-echo "Disable the sound effect on boot"
-sudo nvram SystemAudioVolume=" "
+# echo "Disable the sound effect on boot"
+# sudo nvram SystemAudioVolume=" "
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
 # defaults write com.apple.universalaccess reduceTransparency -bool true
@@ -35,8 +35,8 @@ sudo nvram SystemAudioVolume=" "
 #defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
 # Set sidebar icon size to medium
-echo "Set sidear icon size to medium"
-defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
+# echo "Set sidear icon size to medium"
+# defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
 # Showing scrollbars
 echo "Setting scrollbar preferences"
@@ -171,7 +171,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 #defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Show language menu in the top right corner of the boot screen
-sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
+# sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 #sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
@@ -285,16 +285,16 @@ defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock show-process-indicators -bool true
 
 # Don’t animate opening applications from the Dock
-defaults write com.apple.dock launchanim -bool false
+# defaults write com.apple.dock launchanim -bool false
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
 
 # Disable Dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
+# defaults write com.apple.dashboard mcx-disabled -bool true
 
 # Don’t show Dashboard as a Space
-defaults write com.apple.dock dashboard-in-overlay -bool true
+# defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false

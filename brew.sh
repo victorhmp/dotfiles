@@ -26,9 +26,7 @@ brew upgrade --all
 apps=(
     node
     cask
-    rvm
     nvm
-    bash-completion2
     coreutils
     findutils
     git
@@ -49,12 +47,8 @@ apps=(
 brew install "${apps[@]}"
 
 # Install important macOS applications to save time on initial setup
-brew cask install docker
-brew cask install google-chrome
 brew cask install spotify
-brew cask install visual-studio-eode
 brew cask install iterm2
-brew cask install skim
 
 # Remove outdated versions from the cellar
 brew cleanup
