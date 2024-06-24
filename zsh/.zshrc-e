@@ -79,5 +79,3 @@ esac
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
-[ -f "/Users/victormiranda/.ghcup/env" ] && . "/Users/victormiranda/.ghcup/env" # ghcup-env
