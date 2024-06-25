@@ -60,6 +60,12 @@ alias c='clear'
 alias zshconfig='nvim ~/.zshrc'
 alias sourcezsh='source ~/.zshrc'
 alias tree='tree -C'
+alias vtex='~/.yarn/bin/vtex'
+alias vlink='vtex link'
+alias vunlink='vtex unlink'
+alias vuse='vtex use'
+alias vlogin='vtex login'
+alias vlocal='vtex local token'
 
 export EDITOR="nvim"
 
