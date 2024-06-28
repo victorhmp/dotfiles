@@ -66,6 +66,7 @@ alias vunlink='vtex unlink'
 alias vuse='vtex use'
 alias vlogin='vtex login'
 alias vlocal='vtex local token'
+alias gti='git'
 
 export EDITOR="nvim"
 
