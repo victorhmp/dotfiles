@@ -55,6 +55,12 @@ require('lazy').setup({
     dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
   {
+    'kevinhwang91/nvim-ufo',
+    dependencies = {
+      'kevinhwang91/promise-async',
+    },
+  },
+  {
     'christoomey/vim-tmux-navigator',
     cmd = {
       'TmuxNavigateLeft',
@@ -635,6 +641,7 @@ require('lazy').setup({
   require 'plugins.neo-tree',
   require 'plugins.gitsigns', -- adds gitsigns recommend keymaps
   require 'plugins.alpha',
+  require 'plugins.nvim-ufo',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
