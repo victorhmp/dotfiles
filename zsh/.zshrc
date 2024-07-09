@@ -67,6 +67,8 @@ alias vuse='vtex use'
 alias vlogin='vtex login'
 alias vlocal='vtex local token'
 alias gti='git'
+alias ..='cd ..'
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 
 export EDITOR="nvim"
 
@@ -88,3 +90,6 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 [ -f "/Users/victormiranda/.ghcup/env" ] && . "/Users/victormiranda/.ghcup/env" # ghcup-env
+
+# Created by `pipx` on 2024-07-01 21:51:36
+export PATH="$PATH:/Users/victormiranda/.local/bin"
