@@ -17,15 +17,12 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/ompconfig.toml)"
 fi
 
-
-# Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
-# Add in snippets
-zinit snippet OMZP::git
+# Snippets from oh-my-zsh
 zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
 
@@ -47,28 +44,44 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# fzf related stuff
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# Aliases
+# General aliases
+alias ..='cd ..'
 alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
 alias zshconfig='nvim ~/.zshrc'
 alias sourcezsh='source ~/.zshrc'
 alias tree='tree -C'
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+alias nvimf="nvim \$(ff)"
+
+# VTEX aliases
 alias vtex='~/.yarn/bin/vtex'
 alias vlink='vtex link'
 alias vunlink='vtex unlink'
 alias vuse='vtex use'
 alias vlogin='vtex login'
 alias vlocal='vtex local token'
+
+# Git aliases
 alias gti='git'
-alias ..='cd ..'
-alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+alias ga='git add'
+alias gst='git status'
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gco='git checkout'
+alias gclean='git clean --interactive'
+alias gcl='git clone'
+alias gll='git log --oneline --decorate --graph'
 
 export EDITOR="nvim"
 
@@ -83,13 +96,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# export PATH="$PATH:`yarn global bin`"
-
-# Shell integrations
-eval "$(fzf --zsh)"
+source <(fzf --zsh)
 eval "$(zoxide init --cmd cd zsh)"
 
-[ -f "/Users/victormiranda/.ghcup/env" ] && . "/Users/victormiranda/.ghcup/env" # ghcup-env
+# ghcup-env
+[ -f "/Users/victormiranda/.ghcup/env" ] && . "/Users/victormiranda/.ghcup/env" 
 
-# Created by `pipx` on 2024-07-01 21:51:36
 export PATH="$PATH:/Users/victormiranda/.local/bin"
