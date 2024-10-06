@@ -8,22 +8,23 @@
 // from the command palette or from `Zed` application menu.
 {
   "inline_completions": {
-    "disabled_globs": [
-      ".env",
-      "python/priority_queue.py",
-      "python/quicksort.py"
-    ]
+    "disabled_globs": [".env"]
   },
   "relative_line_numbers": true,
   "vim_mode": true,
   "base_keymap": "VSCode",
+  "scrollbar": { "show": "never" },
   "theme": "Catppuccin Mocha",
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "ui_font_family": "Hack Nerd Font",
   "buffer_font_family": "Hack Nerd Font",
   "languages": {
+    "Go": {
+      "show_inline_completions": false
+    },
     "Python": {
+      "show_inline_completions": true,
       "format_on_save": {
         "external": {
           "command": "black",
